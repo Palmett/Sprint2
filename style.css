@@ -191,6 +191,45 @@ tbody tr:nth-child(even){
     align-items: center;
     gap: 100px;
 }
+
+.raffle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.map{
+    border: 2px solid black;
+    border-radius: 30px;
+   
+}
+
+.map iframe{
+    border-radius: 30px;
+}
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 3px solid rosybrown;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
 footer{
     padding: 5px;
     text-align: center;
