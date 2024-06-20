@@ -9,11 +9,12 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 header{
-    min-height: 10vh;
-    background-color: rgb(194, 255, 255);
+    padding: 10px;
+    background-color: #d1e7dd;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -31,18 +32,19 @@ header{
 .navbar>a{
     padding: 0px 20px;
     text-decoration: none;
-    color: brown;
+    color: #004085;
     cursor: pointer;
-    font-size: 20px;
-    background-color: greenyellow;
-    border: 3px solid green;
+    font-size: 16px;
+    background-color: #e2e3e5;
+    border: 3px solid #004085;
     border-radius: 40px;
     box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.75);
+    margin: 5px 0px;
 
 } 
 
 .logo{
-    width: 60px;
+    width: 50px;
     object-fit: contain;
     
 }
@@ -60,9 +62,10 @@ main{
 }
 
 .title{
-    font-size: 40px;
-    color: gold;
+    font-size: 2.5em;
+    color: #1e2124;
     text-align: center;
+    
     
 }       
 
@@ -70,11 +73,11 @@ main{
     text-decoration: underline;
     text-align: center;
     font-size: 20px;
-    color: goldenrod;
+    color: #353a3f;
 }
 
 .slogan{
-    color: coral;
+    color: rgb(73, 21, 3);
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
@@ -90,9 +93,8 @@ main{
 
 }
 .Home img{
-    height: 30vh;
-    width: 90vw;
-    
+    height: auto;
+    width: 90%; 
 }
 
 .Imagen_secundaria{
@@ -115,6 +117,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
+    margin: 10px 0px;
 }
 
 
@@ -124,9 +127,8 @@ main{
 
 .div_AboutUs img{
 
-    width: 130px;
-    height: 130px;
-    margin-right: 20px;
+    width: 40vw;
+    height: 30vh;
     border-radius: 10px;
 }
 
@@ -140,8 +142,8 @@ main{
 
 .contact img{
     object-fit: contain;
-    max-width: 300px;
-    height: 300px;
+    width: 80%;
+    height: auto;
 }
 
 .contact_end{
@@ -155,10 +157,11 @@ main{
 .order{
     text-decoration: underline;
     cursor: pointer;   
+    color: #004085;
 }
 
 table, thead, tbody, th, tr, td{
-    border: 3px solid rgb(255, 0, 149); 
+    border: 3px solid #004085; 
     padding: 10px;   
 }
 
@@ -170,9 +173,8 @@ table{
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 5%;
     width: 90%;
-    padding-top: 50px;
     
 }
 
@@ -189,11 +191,13 @@ tbody tr:nth-child(even){
 }
 
 .tips{
-    padding: 10px;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    width: 80%;
+
     
 }
 
@@ -205,12 +209,12 @@ tbody tr:nth-child(even){
 
 
 .img_tip{
-    width: 150px;
-    min-height: 150px;
+    width: 50%;
+    min-height: auto;
 }
 
 .tip2 img{
-    max-height: 180px;
+    max-height: 30vh;
 }
 
 .tip1{
@@ -219,6 +223,7 @@ tbody tr:nth-child(even){
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    
 }
 
 
@@ -234,17 +239,23 @@ tbody tr:nth-child(even){
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
 }
 
+.formularies{
+    width: 80%;
+}
+
+
+
 
 .map{
     border: 2px solid black;
     border-radius: 30px;
+    width: 80%;
+    height: 30vh;
    
 }
 
@@ -252,18 +263,35 @@ tbody tr:nth-child(even){
     border-radius: 30px;
 }
 
+form{
+    padding-top: 20px;
+}
+
 .fieldset{
     display: flex;
     flex-direction: column;
     gap: 15px;
     border: 3px solid rosybrown;
-    padding: 10px;
+    padding: 12px;
     border-radius: 20px;
+    background-color: rgb(149, 239, 255);
+
 }
+
+#First_Name, #Last_Name{
+    width: 100%;
+}
+
+#message{
+    width: 100%;
+    overflow-y: auto;
+}
+
 
 .radio-group{
     display: flex;
     flex-direction: column;
+
 }
 
 .radio-group input[type="radio"] {
@@ -275,24 +303,70 @@ footer{
     text-align: center;
     font-size: 14px;
     width: 100%;
+    color: #004085;
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar>a{
+        font-size: 18px;
+    }
+}
+
+.logo{
+    width: 60px;
+}
+
+.Home img{
+    width: 80vw;
+    height: 30vh;
+}
+
+.div_AboutUs{
+    width: 60%;
+    height: auto;
+}
+
+.fieldset{
+    height: auto;
+}
+.map {
+    height: 40vh;
 }
 
 @media (min-width: 1024px){
 
+    .title{
+        font-size: 250%;
+    }
+    
     header{
         min-height: 10vh;
         background-color: rgb(194, 255, 255);
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 20px;
     
     }
     .navbar{
-        display: flex;
         flex-direction: row;
         
     }  
+
+    .logo{
+        width: 60px;
+    }
+
+    .navbar >a{
+        font-size: 20px;
+    }
+
+
 
     .Imagen_secundaria{
         flex-grow: 1;
@@ -307,6 +381,21 @@ footer{
         align-items: center;
         padding-bottom: 10px;
         flex-grow: 1;
+        margin: 5px 0px;
+    }
+
+    .div_AboutUs img{
+
+        width: 20%;
+        height: 20vh;
+        
+    }
+
+
+    .contact img{
+        width: 20vw;
+        padding: 0px;
+        
     }
 
     .contact_end{
@@ -315,10 +404,23 @@ footer{
         justify-content: space-around;
     }
 
+
+
     .tips{
         flex-grow: 1;
         justify-content: center;
     }
+
+    .img_tip{
+        width: 20%;
+        min-height: 25%;
+    }
+
+    .tip2 img{
+        max-height: 25vh;
+    }
+    
+  
     .tip1{
 
         flex-direction: row;
@@ -333,10 +435,35 @@ footer{
 
     .raffle{
         flex-direction: row-reverse;
+        gap: 0px;
+        flex-grow: 1;
     }
 
+    .formularies{
+        width: 35%;
+        height: 100%;
+
+    }
+
+    form{
+        padding-top: 0px;
+    }
+    .fieldset{
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .map{
+
+        width: 30%;
+        height: 40vh;
+       
+    }
     .map iframe{
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
     }
 }
